@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 3fec1c60b9db9534ebadf9b0c29f4d49
+  productGUID: 855a8ce018da1fd4caebeb3e3f8c604c
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Yakitori
+  productName: YakitoriHakase
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -84,6 +84,7 @@ PlayerSettings:
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
+  audioSpatialExperience: 0
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
@@ -630,14 +631,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Yakitori
+  metroPackageName: YakitoriHakase
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Yakitori
+  metroApplicationDescription: YakitoriHakase
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -706,10 +707,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: e67f4b82-17df-41c3-91ea-b89087b77ef7
+  cloudProjectId: 24be9238-403c-4a5e-8f52-a04620eca78b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Yakitori
+  projectName: YakitoriHakase
   organizationId: superninja555
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
