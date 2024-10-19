@@ -199,7 +199,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -8564246006851035807}
         m_TargetAssemblyTypeName: firebird, Assembly-CSharp
-        m_MethodName: bonjiri_parts
+        m_MethodName: seseri_parts
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
