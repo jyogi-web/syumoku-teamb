@@ -6,7 +6,7 @@ public class firebird : MonoBehaviour
 {
 
     //現在の所持金
-    public int money=1000;
+    public static int money=1000;
     //完成焼き鳥二次配列及び値段
     public static int[,] complete = new int[10, 6]
     {
