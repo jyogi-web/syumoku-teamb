@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3604725817694311633
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e1bed528829c1d749a72966640554edf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae8621083aaefab4a98bd0af5667d409, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,8 +88,9 @@ GameObject:
   - component: {fileID: 3550484155033005127}
   - component: {fileID: 3583526070741331898}
   - component: {fileID: -8564246006851035807}
+  - component: {fileID: 3836185349207225161}
   m_Layer: 5
-  m_Name: tan
+  m_Name: reba-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +200,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -8564246006851035807}
         m_TargetAssemblyTypeName: firebird, Assembly-CSharp
-        m_MethodName: tann_parts
+        m_MethodName: reba_parts
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -222,3 +223,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 1000
+--- !u!114 &3836185349207225161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827904316256344212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033f20a9a34351458f7dc35a6940184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

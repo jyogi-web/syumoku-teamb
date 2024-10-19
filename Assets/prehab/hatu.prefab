@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c84475789e9db314e95321f0a76a1160, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb259c581811e25409dc565da2a740c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -87,9 +87,10 @@ GameObject:
   - component: {fileID: 168133427312600272}
   - component: {fileID: 3550484155033005127}
   - component: {fileID: 3583526070741331898}
+  - component: {fileID: 8291503259329808521}
   - component: {fileID: -8564246006851035807}
   m_Layer: 5
-  m_Name: tuiikune
+  m_Name: hatu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +200,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -8564246006851035807}
         m_TargetAssemblyTypeName: firebird, Assembly-CSharp
-        m_MethodName: tukune_parts
+        m_MethodName: hatu_parts
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -209,6 +210,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8291503259329808521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827904316256344212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033f20a9a34351458f7dc35a6940184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-8564246006851035807
 MonoBehaviour:
   m_ObjectHideFlags: 0

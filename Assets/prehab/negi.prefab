@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a38598de5cabeff40aee06d747fa0166, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff6eb8c677ab3bd4299b80fb6c891cdc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,8 +88,9 @@ GameObject:
   - component: {fileID: 3550484155033005127}
   - component: {fileID: 3583526070741331898}
   - component: {fileID: -8564246006851035807}
+  - component: {fileID: 6017843477308724058}
   m_Layer: 5
-  m_Name: sunazuri
+  m_Name: negi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +200,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -8564246006851035807}
         m_TargetAssemblyTypeName: firebird, Assembly-CSharp
-        m_MethodName: sunazuri_parts
+        m_MethodName: eggparts
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -222,3 +223,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 1000
+--- !u!114 &6017843477308724058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827904316256344212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033f20a9a34351458f7dc35a6940184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
