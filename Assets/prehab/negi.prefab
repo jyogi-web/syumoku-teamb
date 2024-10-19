@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 3550484155033005127}
   - component: {fileID: 3583526070741331898}
   - component: {fileID: -8564246006851035807}
+  - component: {fileID: 6017843477308724058}
   m_Layer: 5
   m_Name: negi
   m_TagString: Untagged
@@ -222,3 +223,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 1000
+--- !u!114 &6017843477308724058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827904316256344212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033f20a9a34351458f7dc35a6940184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
