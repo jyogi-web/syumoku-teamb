@@ -21,7 +21,7 @@ public class firebird : MonoBehaviour
         {9,1,2,3,120,0},
         {10,1,2,3,120,0}
     };
-
+    //sozai_hairetu
     public static int[,] parts = new int[20, 3]
     {
         {1,30,0},
@@ -44,6 +44,30 @@ public class firebird : MonoBehaviour
         {18,30,0},
         {19,30,0},
         {20,30,0}
+    };
+    //nanbaringu
+    public static string[] parts_name = new string[20]
+    {
+        "もも肉",
+        "卵",
+        "ぼんじり",
+        "豚バラ",
+        "豚バラ",
+        "ぎんなん",
+        "ハツ",
+        "フリソデ",
+        "カシラ",
+        "皮むね肉",
+        "なんこつ",
+        "ネギ",
+        "レバー",
+        "ささみ",
+        "せせり",
+        "しいたけ",
+        "砂ずり",
+        "タン",
+        "手羽先",
+        "つくね"
     };
 
     //ボタン押した際の処理
