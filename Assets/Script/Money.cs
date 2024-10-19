@@ -10,6 +10,7 @@ public class Money : MonoBehaviour
     void Update()
     {
         UpdateBalanceText();
+
     }
 
     void UpdateBalanceText()
@@ -22,4 +23,5 @@ public class Money : MonoBehaviour
         balance = newBalance;
         UpdateBalanceText();
     }
+
 }
