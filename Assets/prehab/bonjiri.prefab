@@ -214,11 +214,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 527855744054606063}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
+        m_MethodName: PlayOneShot
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 6c35a0f3cc23b0e4a91ff513c7e0d55d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -236,7 +236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b889232a16837b47875adcbac0b25bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1000
 --- !u!114 &8053446250217627859
 MonoBehaviour:
   m_ObjectHideFlags: 0
