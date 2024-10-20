@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class playSE : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip sound1;
+    AudioSource audioSource;
 
-    // Update is called once per frame
-    void Update()
-    {
+    void sound_button_money () {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(sound1);
+    }
         
-    }
-
-    public void playSEbuttun()
-    {
-        SEmanager semanager = GameObject.Find("SEmanager").GetComponent<SEmanager>();
-        semanager.playmoneySE();
-    }
+    
 }
 
