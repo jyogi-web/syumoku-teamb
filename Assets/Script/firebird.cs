@@ -7,6 +7,11 @@ public class firebird : MonoBehaviour
 
     //現在の所持金
     public static int money=1000;
+
+    //フラグ
+    public static bool fusion_page=false;
+    //選択しているスロットフラグ
+
     //完成焼き鳥二次配列及び値段
     public static int[,] complete = new int[10, 6]
     {
@@ -45,7 +50,7 @@ public class firebird : MonoBehaviour
         {19,30,0},
         {20,30,0}
     };
-    //ナンバリング
+    //パーツナンバリング
     public static string[] parts_name = new string[20]
     {
         "もも肉",
@@ -68,6 +73,30 @@ public class firebird : MonoBehaviour
         "タン",
         "手羽先",
         "つくね"
+    };
+    //串ナンバリング
+    public static string[] parfect_name = new string[20]
+    {
+        "もも串",
+        "卵串",
+        "ぼんじり串",
+        "豚バラ串",
+        "豚バラ串",
+        "ぎんなん串",
+        "ハツ串",
+        "フリソデ串",
+        "カシラ串",
+        "皮むね串",
+        "なんこつ串",
+        "ネギ串",
+        "レバー串",
+        "ささみ串",
+        "せせり串",
+        "しいたけ串",
+        "砂ずり串",
+        "タン串",
+        "手羽先串",
+        "つくね串"
     };
     //合成スロット処理
 
