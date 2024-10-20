@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Textscript : MonoBehaviour
+public class  Introduction_textscript : MonoBehaviour
 {
     string[] message = {"うむ、よく来たな!!ワシがやきとり博士だ!", "君は焼き鳥は好きか?突然じゃが、ワシの研究を君に手伝ってほしいのじゃ。",
                 "いろんなところを旅してたくさんの具材を集め、どんどんやきとりを合成するのじゃ!!!", "旅に出る前に君に簡単な知識とお小遣いをやろう。",
