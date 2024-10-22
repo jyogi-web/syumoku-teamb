@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SEmanager : MonoBehaviour
 {
-    AudioSource audiosourse;
+    public static AudioSource audiosourse;
     [SerializeField] AudioClip moneySE;
     // Start is called before the first frame update
     void Start()

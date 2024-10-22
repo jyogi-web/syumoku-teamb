@@ -7,10 +7,15 @@ public class firebird : MonoBehaviour
 
     //現在の所持金
     public static int money=1000;
+
+    //フラグ
+    public static bool fusion_page=false;
+    //選択しているスロットフラグ
+
     //完成焼き鳥二次配列及び値段
     public static int[,] complete = new int[10, 6]
     {
-        {1,1,2,3,120,0},
+        {1,1,1,1,120,0},
         {2,1,2,3,120,0},
         {3,1,2,3,120,0},
         {4,1,2,3,120,0},
@@ -21,12 +26,26 @@ public class firebird : MonoBehaviour
         {9,1,2,3,120,0},
         {10,1,2,3,120,0}
     };
-    //sozai_hairetu
+    //確認用焼き鳥配列
+    public static int[,] chekk = new int[10,3]
+    {
+        {1,1,1},
+        {2,2,2},
+        {3,3,3},
+        {4,4,4},
+        {5,5,5},
+        {6,6,6},
+        {7,7,7},
+        {8,8,8},
+        {9,9,9},
+        {10,10,10}
+    };
+    //素材配列
     public static int[,] parts = new int[20, 3]
     {
         {1,30,0},
         {2,30,0},
-        {3,30,0},
+        {3,30,3},
         {4,30,0},
         {5,30,0},
         {6,30,0},
@@ -45,19 +64,19 @@ public class firebird : MonoBehaviour
         {19,30,0},
         {20,30,0}
     };
-    //nanbaringu
+    //パーツナンバリング
     public static string[] parts_name = new string[20]
     {
         "もも肉",
         "卵",
         "ぼんじり",
         "豚バラ",
-        "豚バラ",
         "ぎんなん",
         "ハツ",
         "フリソデ",
         "カシラ",
-        "皮むね肉",
+        "皮",
+        "むね肉",
         "なんこつ",
         "ネギ",
         "レバー",
@@ -69,12 +88,19 @@ public class firebird : MonoBehaviour
         "手羽先",
         "つくね"
     };
+    //串ナンバリング
+    
+    //合成スロット処理
+    public static int[] chose_srotto = new int[5]; // 配列のサイズを4に設定
 
+    // 選択しているスロットの管理(内部)
+    public static int[] chose_srottopage = new int[] { 0, 0, 0 };
+    
     //ボタン押した際の処理
     public void momoparts()
     {
         parts[0, 2] += 1;
-        money -= parts[0, 1];
+        money -= parts[0, 1];  
     }
     public void eggparts()
     {
@@ -171,6 +197,8 @@ public class firebird : MonoBehaviour
         parts[19, 2] += 1;
         money -= parts[2, 1];
     }
+    
+    //合成シーンのスロット追加処理
     
     
 }
