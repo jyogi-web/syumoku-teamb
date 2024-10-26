@@ -10,6 +10,7 @@ public class fusion_bottan : MonoBehaviour
     public GameObject part1;
     public GameObject part2;
     //生成する位置
+    public Transform parentTran;
     public Transform surottoPos_1;
     public Transform surottoPos_2;
     public Transform surottoPos_3;
@@ -24,7 +25,27 @@ public class fusion_bottan : MonoBehaviour
     public GameObject senntaku2;
     public GameObject senntaku3;
 
-    
+    public GameObject momo;
+    public GameObject egg;
+    public GameObject bonjiri;
+    public GameObject butabara;
+    public GameObject ginnan;
+    public GameObject hatu;
+    public GameObject furisode;
+    public GameObject kasira;
+    public GameObject kawa;
+    public GameObject muneniku;
+    public GameObject nankotu;
+    public GameObject negi;
+    public GameObject reba;
+    public GameObject sasami;
+    public GameObject seseri;
+    public GameObject siitake;
+    public GameObject sunazuri;
+    public GameObject tann;
+    public GameObject tebasaki;
+    public GameObject tukune;
+    public GameObject[] gameObjects;
     void DeleteObjects()
     {
         GameObject[] yaki = GameObject.FindGameObjectsWithTag("yakipa");
@@ -128,7 +149,9 @@ public class fusion_bottan : MonoBehaviour
                         DeleteObjects1();
                         DeleteObjects2();
                         firebird.chose_srotto[0]=4;
-                        
+                        GameObject obj;
+                        obj = Instantiate(gameObjects[r], new Vector3(0, 0, 0), Quaternion.identity);
+                        obj.transform.SetParent(parentTran);
                         asi +=1;
                     }
                     
@@ -258,7 +281,7 @@ public class fusion_bottan : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
-
+        gameObjects=new GameObject[] {momo,egg,bonjiri,butabara,ginnan,hatu,furisode,kasira,kawa,muneniku,nankotu,negi,reba,sasami,seseri,siitake,sunazuri,tann,tebasaki,tukune};
     }
 }
 
