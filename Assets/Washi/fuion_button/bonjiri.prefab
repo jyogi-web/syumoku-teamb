@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4905434977132276952}
   - component: {fileID: 5304741715933204978}
   - component: {fileID: 8932535692198233704}
-  - component: {fileID: 1480774232344214963}
   m_Layer: 5
   m_Name: bonjiri
   m_TagString: Untagged
@@ -271,24 +270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f7524c55f125341837ff0df4264319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonjiriparts: {fileID: 5217879195516867127, guid: c0360d007ab27e74197c53788c715ac0, type: 3}
+  part: {fileID: 0}
+  part1: {fileID: 0}
+  part2: {fileID: 0}
   surottoPos_1: {fileID: 0}
   surottoPos_2: {fileID: 0}
   surottoPos_3: {fileID: 0}
   surottoPos_4: {fileID: 0}
---- !u!114 &1480774232344214963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2838584654359320685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7b6f55cc1626f4daca6f6ae1ed26c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myText: {fileID: 7012256768529680941}
 --- !u!1 &5889048123981356104
 GameObject:
   m_ObjectHideFlags: 0
