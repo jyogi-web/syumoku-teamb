@@ -120,6 +120,7 @@ public class fusion_bottan : MonoBehaviour
                         firebird.chose_srottopage = Enumerable.Repeat(0,3).ToArray();
                         // 必要な処理をここに追加
                         firebird.complete[r,5]+=1;
+                        firebird.complete[r,0]=1;
                         print(firebird.complete[r,5]);
                         DeleteObjects();
                         DeleteObjects1();
