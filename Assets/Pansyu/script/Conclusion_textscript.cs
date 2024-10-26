@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Conclusion_textscript: MonoBehaviour
 {
-    string[] message = {"‚¤‚ÞA‚±‚ê‚Å‚Ð‚Æ‚Æ‚¨‚èI‚í‚Á‚½‚È!!","‚±‚ÌŠî–{‚ð—}‚¦‚Äs“®‚·‚ê‚ÎŒN‚àÄ‚«’¹ƒ}ƒXƒ^[‚É‚È‚ê‚é‚Í‚¸‚¶‚á!!"
-            ,"‚»‚ê‚Å‚ÍA","–ÚŽw‚¹!!Ä‚«’¹ƒ}ƒXƒ^[!!!"};
+    string[] message = {"ï¿½ï¿½ï¿½ÞAï¿½ï¿½ï¿½ï¿½Å‚Ð‚Æ‚Æ‚ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!!","ï¿½ï¿½ï¿½ÌŠï¿½{ï¿½ï¿½}ï¿½ï¿½ï¿½Äsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎŒNï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½}ï¿½Xï¿½^ï¿½[ï¿½É‚È‚ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½!!"
+            ,"ï¿½ï¿½ï¿½ï¿½Å‚ÍA","ï¿½ÚŽwï¿½ï¿½!!ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½}ï¿½Xï¿½^ï¿½[!!!"};
     int messageNUM = 0;
     Text Text_;
     void Start()

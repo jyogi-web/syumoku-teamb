@@ -7,6 +7,7 @@ public class random_resipi : MonoBehaviour
     public int singlegath;
     public int z;
     public int j;
+    public Transform parentTran;
     public GameObject nomal;
     public GameObject gald;
     public GameObject momo;
@@ -21,7 +22,7 @@ public class random_resipi : MonoBehaviour
     public int resipi_rest;
     public int con;
     public static int[] fulag_chicken = new int[] {0,0,0,0,0,0,0,0,0,0};
-    public static float[] setti10Pos = new float[]{-7f, -3.5f, 0f, 3.5f, 7f,-7f, -3.5f, 0f, 3.5f, 7f};
+    public static float[] setti10Pos = new float[]{100f, 200f, 300f, 400f, 500f,0f, 0f, 0f, 0f, 0f};
 
     public void nomalgath()
     {
@@ -29,66 +30,70 @@ public class random_resipi : MonoBehaviour
         {
             firebird.money-=50;
             singlegath  = Random.Range(0, 19);
+            GameObject obj;
+
             if(firebird.complete[singlegath,0]==1)
             {
-                Instantiate(nomal, new Vector3(0, 0, 0), Quaternion.identity);
+                obj = Instantiate(nomal, new Vector3(0, 0, 0), Quaternion.identity);
             }
             else
             {
-                Instantiate(gald, new Vector3(0, 0, 0), Quaternion.identity);
+                obj = Instantiate(gald, new Vector3(0, 0, 0), Quaternion.identity);
             }
+
+            obj.transform.SetParent(parentTran);
+            obj.transform.localPosition = new Vector3(setti10Pos[singlegath], 0f, 0f);
+
+            firebird.complete[singlegath,0]=1;
+            print(singlegath);
         }
         else
         {
             print("お金が足りないよ！");
         }
-
-        firebird.complete[singlegath,0]=1;
-        print(singlegath);
     }
+
     public void tengath()
     {
         if((firebird.money-450)>=0)
         {
             firebird.money-=450;
+            for (int i=0;i<10;i++)
             {
-                for (int i=0;i<10;i++)
+                print(firebird.money);
+                fulag_chicken[j]=Random.Range(0, 20);
+                GameObject obj;
+
+                if(i<5)
                 {
-                    print(firebird.money);
-                    fulag_chicken[j]=Random.Range(0, 20);
-                    //フラグ追加処理
-                    //生成処理
-                    if(i<5)
-                    {
-                        z=2;
-                    }
-                    else
-                    {
-                        z=-2;
-                    }
-                    if(firebird.complete[fulag_chicken[j],0]==1)
-                    {
-                        
-                        Instantiate(nomal, new Vector3(setti10Pos[i], z, 0), Quaternion.identity);
-                    }
-                    else
-                    {
-                        Instantiate(gald, new Vector3(setti10Pos[i],z, 0), Quaternion.identity);
-                    }
-                    firebird.complete[fulag_chicken[j],0]=1;
-                    print(fulag_chicken[j]);
+                    z=200;
                 }
+                else
+                {
+                    z=100;
+                }
+
+                if(firebird.complete[fulag_chicken[j],0]==1)
+                {
+                    obj = Instantiate(nomal, new Vector3(setti10Pos[i], z, 0), Quaternion.identity);
+                }
+                else
+                {
+                    obj = Instantiate(gald, new Vector3(setti10Pos[i], z, 0), Quaternion.identity);
+                }
+
+                obj.transform.SetParent(parentTran);
+                firebird.complete[fulag_chicken[j],0]=1;
+                print(fulag_chicken[j]);
             }
-            
         }
         else
         {
             print("お金が足りないよ！");
         }
-        
     }
+
     void kakutei()
-    
     {
         for (int i=0;i<20;i++)
         {
@@ -96,8 +101,8 @@ public class random_resipi : MonoBehaviour
             {
                 resipi_rest+=1;
             }
-            
         }
+
         for(int r=0;r<20;r++)
         {
             if(firebird.complete[r,0]==0)
@@ -106,11 +111,9 @@ public class random_resipi : MonoBehaviour
                 if(resipi_rest==con)
                 {
                     firebird.complete[r,0]=1;
-                    //インスタ
-                    
+                    //インスタンス生成処理
                 }
             }
         }
     }
-    
 }
