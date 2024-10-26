@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextDisplay : MonoBehaviour
+public class TextDisplayIntro : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI intro;
     public string[] texts;//Unityã‚Å“ü—Í‚·‚éstring‚Ì”z—ñ
