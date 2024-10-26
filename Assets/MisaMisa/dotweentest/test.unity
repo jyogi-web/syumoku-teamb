@@ -671,6 +671,10 @@ PrefabInstance:
       value: butabara
       objectReference: {fileID: 0}
     - target: {fileID: 3583526070741331898, guid: b5f46424bc1c6644ca5cc3c1f03fea46, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3583526070741331898, guid: b5f46424bc1c6644ca5cc3c1f03fea46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
