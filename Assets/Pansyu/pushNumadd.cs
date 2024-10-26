@@ -7,6 +7,7 @@ public class pushNumadd : MonoBehaviour
     // Start is called before the first frame update
     GameObject buyserifu;
     tutrial_hakaseserifu th;
+    bool isPushed;
 
 
     void Start()
@@ -23,8 +24,14 @@ public class pushNumadd : MonoBehaviour
     }
     public void pushbutton()
     {
-        th.pushNum++;
-        firebird.money -= firebird.parts[2,1];
+        if(!isPushed)
+        {
+            isPushed = true;
+
+            th.pushNum++;
+            firebird.money -= firebird.parts[2, 1];
+        }
+        
     }
 
 
