@@ -6,10 +6,7 @@ public class okane : MonoBehaviour
 {
     public Text myText; 
     
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
