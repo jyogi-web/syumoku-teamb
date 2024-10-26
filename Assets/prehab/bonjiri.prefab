@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: -8564246006851035807}
   - component: {fileID: 8053446250217627859}
   - component: {fileID: 527855744054606063}
-  - component: {fileID: 5903430494168235473}
   m_Layer: 5
   m_Name: bonjiri
   m_TagString: Untagged
@@ -345,15 +344,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5903430494168235473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827904316256344212}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a04b722f2641c94aaafea93600a98a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
