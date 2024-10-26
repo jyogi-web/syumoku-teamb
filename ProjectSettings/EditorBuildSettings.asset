@@ -14,13 +14,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tutriar.unity
     guid: 395386b750c9e4a44b20220d181ab2ca
-  - enabled: 1
-    path: Assets/Washi/fusion.unity
-    guid: 6ddda556bef181a4dab28e59c016ef01
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/buy_cine.unity
     guid: 871e801fb5ec0eb4dbc24df857c8edcf
   - enabled: 1
     path: Assets/Alice/Alice'sScene/CellScenesub.unity
     guid: 2eda2e65244039e4a8eef942bddd5c26
+  - enabled: 1
+    path: Assets/Pansyu/tutorial_introduce.unity
+    guid: d76c29f0ee7a70041974249e5cd2c3e4
+  - enabled: 1
+    path: Assets/Pansyu/buy_cine.unity
+    guid: b9777ee5f8d6dd14eb56d6ab94b74d5a
+  - enabled: 1
+    path: Assets/Alice/Alice'sScene/AliceButigire.unity
+    guid: 80126dbdb3f074c408319fdee10868c6
+  - enabled: 1
+    path: Assets/Alice/fusionAlice.unity
+    guid: a7d85ad35c6a2674194899b7a91e538f
+  - enabled: 1
+    path: Assets/Alice/gatyaAlice.unity
+    guid: 53174821645951942a9502aee71d357e
+  - enabled: 1
+    path: Assets/Pansyu/tutorial_conclusion.unity
+    guid: 28db6b18a0074714181cf41eb9b2e77d
+  - enabled: 1
+    path: Assets/Alice/Todayalice.unity
+    guid: e21373d147dbcbe4dbe42a953b6b3215
   m_configObjects: {}
