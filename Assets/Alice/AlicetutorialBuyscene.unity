@@ -242,16 +242,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1902530845}
-  MomoSingle: {fileID: 1827904316256344212, guid: becd6c1ce9824bf47959c3fb0ab7b543, type: 3}
-  egg: {fileID: 1827904316256344212, guid: e8197871e4864564ba162299f77db176, type: 3}
-  bonjiri: {fileID: 1827904316256344212, guid: ca099a9eaa4e49b4f8b7a82b71df9dc9, type: 3}
-  butabara: {fileID: 1827904316256344212, guid: b5f46424bc1c6644ca5cc3c1f03fea46, type: 3}
-  ginnan: {fileID: 1827904316256344212, guid: f7385a688fb9e934da91385ebea53059, type: 3}
-  hatu: {fileID: 1827904316256344212, guid: c9bae0ee3194faf4cba12f4282595fbc, type: 3}
-  furisode: {fileID: 1827904316256344212, guid: f95c7ab0e0663b34ea9697745ff1d0eb, type: 3}
-  kasira: {fileID: 1827904316256344212, guid: c9762696434885e4095fc343aaadc572, type: 3}
-  negi: {fileID: 1827904316256344212, guid: cf5e69258c04e644ab2043c11476636f, type: 3}
-  torikawa: {fileID: 1827904316256344212, guid: f95c7ab0e0663b34ea9697745ff1d0eb, type: 3}
+  MomoSingle: {fileID: 8524578537437657745, guid: 10b169659f318964895a47dc73453cb8, type: 3}
+  egg: {fileID: 1475899448119057601, guid: 05bd060c84d8f64459442e7fc7c55031, type: 3}
+  bonjiri: {fileID: 9175812614382401141, guid: d4ac5ae54336c5c43b8538b58f37ad29, type: 3}
+  butabara: {fileID: 4355425061382297977, guid: d86a43f35081dfa4a8fd5bb30bcfdd4e, type: 3}
+  ginnan: {fileID: 9175812614382401141, guid: d4ac5ae54336c5c43b8538b58f37ad29, type: 3}
+  hatu: {fileID: 6835283642716615984, guid: e3744268b2f80724c89d3538382e32c9, type: 3}
+  furisode: {fileID: 9175812614382401141, guid: d4ac5ae54336c5c43b8538b58f37ad29, type: 3}
+  kasira: {fileID: 929600436721763741, guid: 9cfc3f12ff1c7a349801c37619002bc3, type: 3}
+  negi: {fileID: 7747942739953591761, guid: 8db8a32c2c19aef46b41f9475d2f5919, type: 3}
+  torikawa: {fileID: 3185079424346712117, guid: 86881c1deef7d8d4d97dab422f5c9231, type: 3}
   gameObjects:
   - {fileID: 1827904316256344212, guid: 2cb174d1e94f181448f2693fe7af5eb2, type: 3}
   - {fileID: 1827904316256344212, guid: e8197871e4864564ba162299f77db176, type: 3}
