@@ -116,7 +116,7 @@ public class random_resipi : MonoBehaviour
     {
         gameObjects = new GameObject[] {momo,egg,bonjiri,butabara,ginnan,hatu,furisode,kasira,kawa,muneniku,nankotu,negi,reba,sasami,seseri,siitake,sunazuri,tann,tebasaki,tukune};
     }
-    void kakutei()
+    public void kakutei()
     {
         for (int i=0;i<20;i++)
         {
@@ -133,8 +133,14 @@ public class random_resipi : MonoBehaviour
                 con+=1;
                 if(resipi_rest==con)
                 {
+                    GameObject kabe;
+            
+                    kabe=Instantiate(haikei, new Vector3(300, 200, 0), Quaternion.identity);
+                    kabe.transform.SetParent(parentTran);
                     firebird.complete[r,0]=1;
-                    //インスタンス生成処理
+                    GameObject obj;
+                    obj = Instantiate(gameObjects[r], new Vector3(300, 200, 0), Quaternion.identity);
+                    obj.transform.SetParent(parentTran);
                 }
             }
         }
