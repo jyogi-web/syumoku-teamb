@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9bf3d9bfa82af16439d0ff82671e90b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17d21b7937bf98040b7077187b18fecf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -87,10 +87,11 @@ GameObject:
   - component: {fileID: 168133427312600272}
   - component: {fileID: 3550484155033005127}
   - component: {fileID: 3583526070741331898}
-  - component: {fileID: -8564246006851035807}
-  - component: {fileID: -8595095634042831782}
+  - component: {fileID: 8053446250217627859}
+  - component: {fileID: 527855744054606063}
+  - component: {fileID: -7198891781445946634}
   m_Layer: 5
-  m_Name: ginnan
+  m_Name: bonjiri_tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,14 +194,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 3550484155033005127}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -8564246006851035807}
-        m_TargetAssemblyTypeName: firebird, Assembly-CSharp
-        m_MethodName: ginnan_parts
+      - m_Target: {fileID: -7198891781445946634}
+        m_TargetAssemblyTypeName: pushNumadd, Assembly-CSharp
+        m_MethodName: pushbutton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -210,7 +211,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -8595095634042831782}
+      - m_Target: {fileID: 527855744054606063}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -222,7 +223,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-8564246006851035807
+--- !u!114 &8053446250217627859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,10 +232,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1827904316256344212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b889232a16837b47875adcbac0b25bf, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &-8595095634042831782
+  m_Delegates: []
+--- !u!82 &527855744054606063
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,3 +332,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7198891781445946634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827904316256344212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf271ba24c00aa4e84d36f9a6bc8158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

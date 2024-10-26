@@ -193,7 +193,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3550484155033005127}
   m_OnClick:
     m_PersistentCalls:
@@ -234,7 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b889232a16837b47875adcbac0b25bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
 --- !u!82 &1920670818135583769
 AudioSource:
   m_ObjectHideFlags: 0
