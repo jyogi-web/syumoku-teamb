@@ -23,6 +23,8 @@ public class fusion_bottan : MonoBehaviour
     public GameObject senntaku1;
     public GameObject senntaku2;
     public GameObject senntaku3;
+
+    
     void DeleteObjects()
     {
         GameObject[] yaki = GameObject.FindGameObjectsWithTag("yakipa");
