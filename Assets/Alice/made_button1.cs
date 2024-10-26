@@ -14,15 +14,15 @@ public class made_button1 : MonoBehaviour
     public GameObject hatu;
     public GameObject furisode;
     public GameObject kasira;
-    public GameObject Top3;
-    public GameObject autumnspecial;
+    public GameObject negi;
+    public GameObject torikawa;
     public GameObject[] gameObjects;
     public int i=0;
     public int column=0;
     public int row=0;
     public static int[] x = new int[5]
     {
-        80, 160, 240, 320, 400 
+        130, 210, 290, 370, 450 
     };
     public static int[] y = new int[2]
     {
@@ -31,7 +31,7 @@ public class made_button1 : MonoBehaviour
     void Start()
     {
         // 配列にcanvasとmomoを追加
-        gameObjects = new GameObject[] {MomoSingle,egg,bonjiri,butabara,ginnan,hatu,furisode,kasira,Top3,autumnspecial};
+        gameObjects = new GameObject[] {MomoSingle,egg,bonjiri,butabara,ginnan,hatu,furisode,kasira,negi,torikawa};
 
         // 配列内の各GameObjectを処理
         foreach (GameObject obj in gameObjects)
