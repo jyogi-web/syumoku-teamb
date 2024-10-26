@@ -35,7 +35,7 @@ public class firebird : MonoBehaviour
     //選択しているスロットフラグ
 
     //完成焼き鳥二次配列及び値段
-    public static int[,] complete = new int[10, 6]
+    public static int[,] complete = new int[22, 6]
     {
         {0,1,1,1,120,0},
         {0,1,2,3,120,0},
@@ -62,7 +62,7 @@ public class firebird : MonoBehaviour
         
     };
     //確認用焼き鳥配列
-    public static int[,] chekk = new int[10,3]
+    public static int[,] chekk = new int[22,3]
     {
         {1,1,1},
         {2,2,2},
@@ -85,7 +85,7 @@ public class firebird : MonoBehaviour
         {19,19,19},
         {20,20,20},
         {21,21,21},
-        {22,22,22},
+        {22,22,22}
 
 
     };
