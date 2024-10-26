@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,7 @@ public class  Introduction_textscript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-                messageNUM++;
+            messageNUM++;
             Text_.text = message[messageNUM];
         }
     }
