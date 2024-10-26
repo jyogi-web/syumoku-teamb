@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/buy_cine.unity
     guid: 871e801fb5ec0eb4dbc24df857c8edcf
   - enabled: 1
-    path: Assets/Alice/CellScenesub.unity
+    path: Assets/Alice/Alice'sScene/CellScenesub.unity
     guid: 2eda2e65244039e4a8eef942bddd5c26
   m_configObjects: {}
