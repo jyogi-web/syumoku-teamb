@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Alice/Alice'sScene/AliceButigire.unity
     guid: 80126dbdb3f074c408319fdee10868c6
   - enabled: 1
+    path: Assets/Alice/Alice'sScene/Alice`s Buyscene.unity
+    guid: 30b5a3fc8dfd82447b557065d236fc5e
+  - enabled: 1
     path: Assets/Alice/fusionAlice.unity
     guid: a7d85ad35c6a2674194899b7a91e538f
   - enabled: 1
@@ -56,4 +59,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alice/Alice'sScene/SceneChange.unity
     guid: 55618bf35aa65fd4a9d0f4ab8c6a7c15
+  - enabled: 1
+    path: Assets/Alice/TutrioalAnimationGatya 1.unity
+    guid: fbc62f2b48a28174082fa26e1e3155b3
+  - enabled: 1
+    path: Assets/Alice/Wazapfusion.unity
+    guid: 9a25139a4e5cce940a3a81714a8e98e5
+  - enabled: 1
+    path: Assets/Alice/sellcene_Wazap.unity
+    guid: 09be2749564387348b8c14de50fbd2a7
   m_configObjects: {}
