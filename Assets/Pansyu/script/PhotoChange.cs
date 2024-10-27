@@ -7,6 +7,9 @@ public class PhotoChange : MonoBehaviour
 {
     private Image img;
     public Text PageCount;
+
+   
+
     public int count = 1;
 
 
