@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce400879f0c1464091198dd625954fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Todayalice
+  SceneName: gatyaAlice
 --- !u!1 &749395426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1042,8 @@ MonoBehaviour:
   - '   '
   - "\u3046\u3080\u3001\u3053\u308C\u3067\u3072\u3068\u3068\u304A\u308A\u7D42\u308F\u3063\u305F\u306A!!"
   - "\u3053\u306E\u57FA\u672C\u3092\u6291\u3048\u3066\u884C\u52D5\u3059\u308C\u3070\u541B\u3082\u713C\u304D\u9CE5\u30DE\u30B9\u30BF\u30FC\u306B\u306A\u308C\u308B\u306F\u305A\u3058\u3083!!"
+  - "\u3058\u3083\u3042\u3001\u6700\u5F8C\u306B\u3082\u3046\u4E00\u3064\u30D7\u30EC\u30BC\u30F3\u30C8\u3058\u3083\u3001\u30AC\u30C1\u30E3\u3092\u56DE\u3059\u306E\u3058\u3083!!!
+    \u713C\u304D\u9CE5\u306E\u30EC\u30B7\u30D4\u304C\u624B\u306B\u5165\u308B\u305E"
   - "\u305D\u308C\u3067\u306F,\n\u76EE\u6307\u305B!!\u713C\u304D\u9CE5\u30DE\u30B9\u30BF\u30FC!!!"
 --- !u!114 &1743319390
 MonoBehaviour:
