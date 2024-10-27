@@ -7,6 +7,7 @@ public class PhotoChange : MonoBehaviour
 {
     private Image img;
     private int count = 1;
+    public Text PageCount;
 
     void Start()
     {
@@ -16,19 +17,32 @@ public class PhotoChange : MonoBehaviour
     public void Next()
     {
         count++;
-        if (count >= 23)
+        PageCount.text = count.ToString();
+        if (count >= 24)
             count = 1;
-
-        img.sprite = Resources.Load<Sprite>("Image/photo" + count.ToString());
+        if (firebird.complete[count,0] == 1)
+        {
+            img.sprite = Resources.Load<Sprite>("Image/photo" + count.ToString());
+        }
+        else
+        {
+            img.sprite = Resources.Load<Sprite>("Image/photo24");
+        }
     }
 
     public void Back()
     {
         count--;
-        Debug.Log(count);
+        PageCount.text = count.ToString();
         if (count <= 0)
-            count = 22;
-
-        img.sprite = Resources.Load<Sprite>("Image/photo" + count.ToString());
+            count = 23;
+        if (firebird.complete[count, 0] == 1)
+        {
+            img.sprite = Resources.Load<Sprite>("Image/photo" + count.ToString());
+        }
+        else
+        {
+            img.sprite = Resources.Load<Sprite>("Image/photo24");
+        }
     }
 }
