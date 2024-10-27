@@ -150,7 +150,7 @@ public class fusion_bottan : MonoBehaviour
                         DeleteObjects2();
                         firebird.chose_srotto[0]=4;
                         GameObject obj;
-                        obj = Instantiate(gameObjects[r], new Vector3(0, 0, 0), Quaternion.identity);
+                        obj = Instantiate(gameObjects[r], new Vector3(-11, 1.6f, 0.0f), Quaternion.identity);
                         obj.transform.SetParent(parentTran);
                         asi +=1;
                     }
