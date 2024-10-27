@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Washi/gatya.unity
     guid: f86cde47b2f89d3489359538fb9e9728
+  - enabled: 1
+    path: Assets/Alice/AnimationGatya.unity
+    guid: 97c25923775628045a90377fd5655c52
+  - enabled: 1
+    path: Assets/Alice/Alice'sScene/SceneChange.unity
+    guid: 55618bf35aa65fd4a9d0f4ab8c6a7c15
   m_configObjects: {}
