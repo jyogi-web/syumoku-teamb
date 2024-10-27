@@ -331,7 +331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2717.006, y: -0.000015258789}
+  m_AnchoredPosition: {x: -2717, y: 0.0000113248825}
   m_SizeDelta: {x: 3500, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &55084416
@@ -1011,6 +1011,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e8de78e4e05fb6a459ac26c7377c9cc4, type: 3}
     - target: {fileID: 8932535692198233704, guid: 0a79c0779d622cc45a008fad7b093e7f, type: 3}
+      propertyPath: senntaku1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932535692198233704, guid: 0a79c0779d622cc45a008fad7b093e7f, type: 3}
+      propertyPath: senntaku2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932535692198233704, guid: 0a79c0779d622cc45a008fad7b093e7f, type: 3}
+      propertyPath: parentTran
+      value: 
+      objectReference: {fileID: 1540756124}
+    - target: {fileID: 8932535692198233704, guid: 0a79c0779d622cc45a008fad7b093e7f, type: 3}
       propertyPath: surottoPos_1
       value: 
       objectReference: {fileID: 1407563427}
@@ -1256,6 +1268,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5410049831715328926, guid: 4ef71cf0377e37746ac27e0edf138a91, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1703991518}
+    - target: {fileID: 5410049831715328926, guid: 4ef71cf0377e37746ac27e0edf138a91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -1398,6 +1414,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2838584654359320685, guid: 4ef71cf0377e37746ac27e0edf138a91, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1703991512}
+    - targetCorrespondingSourceObject: {fileID: 2838584654359320685, guid: 4ef71cf0377e37746ac27e0edf138a91, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1703991518}
   m_SourcePrefab: {fileID: 100100000, guid: 4ef71cf0377e37746ac27e0edf138a91, type: 3}
 --- !u!1 &661211217
 GameObject:
@@ -1640,8 +1659,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 661211219}
   m_HandleRect: {fileID: 661211218}
   m_Direction: 0
-  m_Value: 1.0000024
-  m_Size: 0.22315939
+  m_Value: 1
+  m_Size: 0.2237143
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1692,6 +1711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52423683}
     m_Modifications:
+    - target: {fileID: 2575227899147372827, guid: 8e608405f7f4dab47a302a949fa570cc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b164ed586fdc04b4aae0875a53baec3e, type: 3}
     - target: {fileID: 2838584654359320685, guid: 8e608405f7f4dab47a302a949fa570cc, type: 3}
       propertyPath: m_Name
       value: butabara
@@ -2837,6 +2860,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: setti_egg
       objectReference: {fileID: 0}
+    - target: {fileID: 5410049831715328926, guid: 615ae99f39992694ca4582c8dbdda4d3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5573400329426685478, guid: 615ae99f39992694ca4582c8dbdda4d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2941,6 +2968,10 @@ PrefabInstance:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: e8de78e4e05fb6a459ac26c7377c9cc4, type: 3}
+    - target: {fileID: 8932535692198233704, guid: 615ae99f39992694ca4582c8dbdda4d3, type: 3}
+      propertyPath: parentTran
+      value: 
+      objectReference: {fileID: 1540756124}
     - target: {fileID: 8932535692198233704, guid: 615ae99f39992694ca4582c8dbdda4d3, type: 3}
       propertyPath: surottoPos_1
       value: 
@@ -3627,7 +3658,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 460088240}
   m_HandleRect: {fileID: 460088239}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4120,6 +4151,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 1442477211}
+--- !u!114 &1703991518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633446405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f7524c55f125341837ff0df4264319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part: {fileID: 5217879195516867127, guid: c0360d007ab27e74197c53788c715ac0, type: 3}
+  part1: {fileID: 5217879195516867127, guid: 5ea0bb71718f3504198f3eda3171a4b6, type: 3}
+  part2: {fileID: 5217879195516867127, guid: 5e7b7ef3f36eb064bbe9f5ea6f6d54fc, type: 3}
+  parentTran: {fileID: 1540756124}
+  surottoPos_1: {fileID: 1407563427}
+  surottoPos_2: {fileID: 324714655}
+  surottoPos_3: {fileID: 1084322907}
+  surottoPos_4: {fileID: 1296627431}
+  piron: {fileID: 0}
+  bubu: {fileID: 0}
+  senntaku1: {fileID: 0}
+  senntaku2: {fileID: 0}
+  senntaku3: {fileID: 0}
+  momo: {fileID: 0}
+  egg: {fileID: 0}
+  bonjiri: {fileID: 0}
+  butabara: {fileID: 0}
+  ginnan: {fileID: 0}
+  hatu: {fileID: 0}
+  furisode: {fileID: 0}
+  kasira: {fileID: 0}
+  kawa: {fileID: 0}
+  muneniku: {fileID: 0}
+  nankotu: {fileID: 0}
+  negi: {fileID: 0}
+  reba: {fileID: 0}
+  sasami: {fileID: 0}
+  seseri: {fileID: 0}
+  siitake: {fileID: 0}
+  sunazuri: {fileID: 0}
+  tann: {fileID: 0}
+  tebasaki: {fileID: 0}
+  tukune: {fileID: 0}
+  gameObjects: []
 --- !u!1 &1741518984
 GameObject:
   m_ObjectHideFlags: 0

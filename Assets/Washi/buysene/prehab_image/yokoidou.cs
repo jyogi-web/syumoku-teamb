@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.DOLocalMove(new Vector3(6.3f, 2, 0),1.5f)
+        transform.DOLocalMove(new Vector3(5, 1.5f, 0),1.5f)
             .SetLoops(-2,LoopType.Incremental);
     }
 

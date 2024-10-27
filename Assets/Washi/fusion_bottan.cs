@@ -114,6 +114,9 @@ public class fusion_bottan : MonoBehaviour
         senntaku1.SetActive(false);
         senntaku2.SetActive(false);
         senntaku3.SetActive(false);
+        print(firebird.chose_srottopage[0]);
+        print(firebird.chose_srottopage[1]);
+        print(firebird.chose_srottopage[2]);
         if (firebird.chose_srottopage[0] == 0 || firebird.chose_srottopage[1] == 0 || firebird.chose_srottopage[2] == 0)
         {
             print("スロットが埋まってないよ！");
@@ -122,7 +125,7 @@ public class fusion_bottan : MonoBehaviour
         else
         {
                 int asi =0;
-                for (int r = 0; r <10 ; r++)
+                for (int r = 0; r <22 ; r++)
                 {
                     int trueCount = 0;
                     for(int j=0;j<3; j++)
