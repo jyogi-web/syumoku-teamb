@@ -5,6 +5,7 @@ using UnityEngine;
 public class random_resipi : MonoBehaviour
 {
     public int singlegath;
+    public static int gatyatike;
     public int z;
     public int j;
     public GameObject red;
@@ -52,6 +53,7 @@ public class random_resipi : MonoBehaviour
             if(firebird.complete[singlegath,0]==1)
             {
                 obj = Instantiate(red, new Vector3(300, 200, 0), Quaternion.identity);
+                gatyatike++;
             }
             else
             {
@@ -59,7 +61,7 @@ public class random_resipi : MonoBehaviour
             }
 
             obj.transform.SetParent(parentTran);
-            //obj.transform.localPosition = new Vector3(setti10Pos[singlegath], 0f, 0f);
+
 
             firebird.complete[singlegath,0]=1;
             print(singlegath);
@@ -96,6 +98,7 @@ public class random_resipi : MonoBehaviour
                 if(firebird.complete[fulag_chicken[i],0]==1) // 修正
                 {
                     obj = Instantiate(red, new Vector3(setti10Pos[i], z, 0), Quaternion.identity);
+                    gatyatike++;
                 }
                 else
                 {
@@ -118,31 +121,39 @@ public class random_resipi : MonoBehaviour
     }
     public void kakutei()
     {
-        for (int i=0;i<20;i++)
+        if(gatyatike>=10)
         {
-            if(firebird.complete[i,0]==0)
+            gatyatike-=10;
+            for (int i=0;i<20;i++)
             {
-                resipi_rest+=1;
-            }
-        }
-
-        for(int r=0;r<20;r++)
-        {
-            if(firebird.complete[r,0]==0)
-            {
-                con+=1;
-                if(resipi_rest==con)
+                if(firebird.complete[i,0]==0)
                 {
-                    GameObject kabe;
-            
-                    kabe=Instantiate(haikei, new Vector3(300, 200, 0), Quaternion.identity);
-                    kabe.transform.SetParent(parentTran);
-                    firebird.complete[r,0]=1;
-                    GameObject obj;
-                    obj = Instantiate(gameObjects[r], new Vector3(300, 200, 0), Quaternion.identity);
-                    obj.transform.SetParent(parentTran);
+                    resipi_rest+=1;
                 }
             }
+
+            for(int r=0;r<20;r++)
+            {
+                if(firebird.complete[r,0]==0)
+                {
+                    con+=1;
+                    if(resipi_rest==con)
+                    {
+                        GameObject kabe;
+                
+                        kabe=Instantiate(haikei, new Vector3(300, 200, 0), Quaternion.identity);
+                        kabe.transform.SetParent(parentTran);
+                        firebird.complete[r,0]=1;
+                        GameObject obj;
+                        obj = Instantiate(gameObjects[r], new Vector3(300, 200, 0), Quaternion.identity);
+                        obj.transform.SetParent(parentTran);
+                    }
+                }
+            }
+        }
+        else
+        {
+            print("チケット不足");
         }
     }
 }
