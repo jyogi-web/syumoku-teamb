@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alice/sellcene_Wazap.unity
     guid: 09be2749564387348b8c14de50fbd2a7
+  - enabled: 1
+    path: Assets/Pansyu/zukann.unity
+    guid: 8f03f2df44176b14f9c21ad5d0fcc26d
   m_configObjects: {}
