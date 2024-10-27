@@ -30,6 +30,7 @@ public class pushNumadd : MonoBehaviour
 
             th.pushNum++;
             firebird.money -= firebird.parts[2, 1];
+            firebird.parts[2,2] += 1;
         }
         
     }

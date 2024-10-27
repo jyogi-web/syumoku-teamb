@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PhotoChange : MonoBehaviour
 {
     private Image img;
-
-    private int count = 1;
+    public Text PageCount;
+    public int count = 1;
 
 
     void Start()
@@ -19,7 +19,7 @@ public class PhotoChange : MonoBehaviour
     {
         count++;
         PageCount.text = count.ToString();
-        if (count >= 24)
+        if (count >= 23)
             count = 1;
         if (firebird.complete[count,0] == 1)
         {
@@ -36,7 +36,7 @@ public class PhotoChange : MonoBehaviour
         count--;
         PageCount.text = count.ToString();
         if (count <= 0)
-            count = 23;
+            count = 22;
         if (firebird.complete[count, 0] == 1)
         {
             img.sprite = Resources.Load<Sprite>("Image/photo" + count.ToString());
