@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/buy_cine.unity
     guid: 871e801fb5ec0eb4dbc24df857c8edcf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Alice/Alice'sScene/CellScenesub.unity
     guid: 2eda2e65244039e4a8eef942bddd5c26
   - enabled: 1
@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alice/Alice'sScene/sellcene_Ali.unity
     guid: a83867645f52a2b41a79fe7de401bd6b
+  - enabled: 1
+    path: Assets/Washi/fusion.unity
+    guid: 6ddda556bef181a4dab28e59c016ef01
+  - enabled: 1
+    path: Assets/Washi/gatya.unity
+    guid: f86cde47b2f89d3489359538fb9e9728
   m_configObjects: {}
