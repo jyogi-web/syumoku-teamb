@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 218920766}
   - component: {fileID: 218920765}
   - component: {fileID: 218920764}
+  - component: {fileID: 218920767}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -204,7 +205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212007585}
+      - m_Target: {fileID: 218920767}
         m_TargetAssemblyTypeName: PhotoChange, Assembly-CSharp
         m_MethodName: Next
         m_Mode: 1
@@ -266,6 +267,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218920762}
   m_CullTransparentMesh: 1
+--- !u!114 &218920767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218920762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f90ce300b0f8244ade1965edf297da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &292199092
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +290,7 @@ GameObject:
   - component: {fileID: 292199093}
   - component: {fileID: 292199095}
   - component: {fileID: 292199094}
+  - component: {fileID: 292199096}
   m_Layer: 5
   m_Name: PageNumber
   m_TagString: Untagged
@@ -347,6 +361,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292199092}
   m_CullTransparentMesh: 1
+--- !u!114 &292199096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292199092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9fb48ae7b600304c8ff611b3d2b0f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 292199094}
 --- !u!1 &342002429
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f90ce300b0f8244ade1965edf297da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PageCount: {fileID: 292199094}
 --- !u!4 &1212007586
 Transform:
   m_ObjectHideFlags: 0
