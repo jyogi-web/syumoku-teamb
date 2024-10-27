@@ -7,59 +7,59 @@ using UnityEngine.UI;
 public class TextDisplayConclusion : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI conclusion;
-    public string[] texts;//Unityã‚Å“ü—Í‚·‚éstring‚Ì”z—ñ
-    int textNumber;//‰½”Ô–Ú‚Ìtexts[]‚ğ•\¦‚³‚¹‚é‚©
-    string displayText;//•\¦‚³‚¹‚éstring
-    int textCharNumber;//‰½•¶š–Ú‚ğdisplayText‚É’Ç‰Á‚·‚é‚©
-    int displayTextSpeed; //‘S‘Ì‚ÌƒtƒŒ[ƒ€ƒŒ[ƒg‚ğ—‚Æ‚·•Ï”
-    bool click;//ƒNƒŠƒbƒN”»’è
-    bool textStop; //ƒeƒLƒXƒg•\¦‚ğn‚ß‚é‚©
+    [SerializeField,TextArea(1,2)] string[] texts;//Unityï¿½ï¿½Å“ï¿½ï¿½Í‚ï¿½ï¿½ï¿½stringï¿½Ì”zï¿½ï¿½
+    int textNumber;//ï¿½ï¿½ï¿½Ô–Ú‚ï¿½texts[]ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é‚©
+    string displayText;//ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½string
+    int textCharNumber;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú‚ï¿½displayTextï¿½É’Ç‰ï¿½ï¿½ï¿½ï¿½é‚©
+    int displayTextSpeed; //ï¿½Sï¿½Ì‚Ìƒtï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½gï¿½ğ—‚Æ‚ï¿½ï¿½Ïï¿½
+    bool click;//ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
+    bool textStop; //ï¿½eï¿½Lï¿½Xï¿½gï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½nï¿½ß‚é‚©
     void Start()
     {
 
     }
     void Update()
     {
-        if (textStop == false) //ƒeƒLƒXƒg‚ğ•\¦‚³‚¹‚éif•¶
+        if (textStop == false) //ï¿½eï¿½Lï¿½Xï¿½gï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ifï¿½ï¿½
         {
             displayTextSpeed++;
-            if (displayTextSpeed % 15 == 0)//‚T‰ñ‚Éˆê‰ñƒvƒƒOƒ‰ƒ€‚ğÀs‚·‚éif•¶
+            if (displayTextSpeed % 5 == 0)//ï¿½Tï¿½ï¿½Éˆï¿½ï¿½vï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ifï¿½ï¿½
             {
 
-                if (textCharNumber != texts[textNumber].Length)//‚à‚µtext[textNumber]‚Ì•¶š—ñ‚Ì•¶š‚ªÅŒã‚Ì•¶š‚¶‚á‚È‚¯‚ê‚Î
+                if (textCharNumber != texts[textNumber].Length)//ï¿½ï¿½ï¿½ï¿½text[textNumber]ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÅŒï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½
                 {
-                    displayText = displayText + texts[textNumber][textCharNumber];//displayText‚É•¶š‚ğ’Ç‰Á‚µ‚Ä‚¢‚­
-                    textCharNumber = textCharNumber + 1;//Ÿ‚Ì•¶š‚É‚·‚é
+                    displayText = displayText + texts[textNumber][textCharNumber];//displayTextï¿½É•ï¿½ï¿½ï¿½ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
+                    textCharNumber = textCharNumber + 1;//ï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½
                 }
-                else//‚à‚µtext[textNumber]‚Ì•¶š—ñ‚Ì•¶š‚ªÅŒã‚Ì•¶š‚¾‚Á‚½‚ç
+                else//ï¿½ï¿½ï¿½ï¿½text[textNumber]ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÅŒï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
-                    if (textNumber != texts.Length - 1)//‚à‚µtexts[]‚ªÅŒã‚ÌƒZƒŠƒt‚¶‚á‚È‚¢‚Æ‚«‚Í
+                    if (textNumber != texts.Length - 1)//ï¿½ï¿½ï¿½ï¿½texts[]ï¿½ï¿½ï¿½ÅŒï¿½ÌƒZï¿½ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½
                     {
-                        if (click == true)//ƒNƒŠƒbƒN‚³‚ê‚½”»’è
+                        if (click == true)//ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½ï¿½
                         {
-                            displayText = "";//•\¦‚³‚¹‚é•¶š—ñ‚ğÁ‚·
-                            textCharNumber = 0;//•¶š‚Ì”Ô†‚ğÅ‰‚É‚·‚é
-                            textNumber = textNumber + 1;//Ÿ‚ÌƒZƒŠƒt‚É‚·‚é
+                            displayText = "";//ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                            textCharNumber = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½Ì”Ôï¿½ï¿½ï¿½ï¿½Åï¿½ï¿½É‚ï¿½ï¿½ï¿½
+                            textNumber = textNumber + 1;//ï¿½ï¿½ï¿½ÌƒZï¿½ï¿½ï¿½tï¿½É‚ï¿½ï¿½ï¿½
                         }
                     }
-                    else //‚à‚µtexts[]‚ªÅŒã‚ÌƒZƒŠƒt‚É‚È‚Á‚½‚ç
+                    else //ï¿½ï¿½ï¿½ï¿½texts[]ï¿½ï¿½ï¿½ÅŒï¿½ÌƒZï¿½ï¿½ï¿½tï¿½É‚È‚ï¿½ï¿½ï¿½ï¿½ï¿½
                     {
-                        if (click == true) //ƒNƒŠƒbƒN‚³‚ê‚½”»’è
+                        if (click == true) //ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½ï¿½
                         {
-                            displayText = ""; //•\¦‚³‚¹‚é•¶š—ñ‚àÁ‚·
-                            textCharNumber = 0; //•¶š‚Ì”Ô†‚ğÅ‰‚É‚·‚é
-                            textStop = true; //ƒZƒŠƒt•\¦‚ğ~‚ß‚é
+                            displayText = ""; //ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                            textCharNumber = 0; //ï¿½ï¿½ï¿½ï¿½ï¿½Ì”Ôï¿½ï¿½ï¿½ï¿½Åï¿½ï¿½É‚ï¿½ï¿½ï¿½
+                            textStop = true; //ï¿½Zï¿½ï¿½ï¿½tï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½ß‚ï¿½
                         }
                     }
                 }
 
                 conclusion.text = displayText.ToString();
-                //this.GetComponent<Text>().text = displayText;//‰æ–Êã‚ÉdisplayText‚ğ•\¦
-                click = false;//ƒNƒŠƒbƒN‚³‚ê‚½”»’è‚ğ‰ğœ
+                //this.GetComponent<Text>().text = displayText;//ï¿½ï¿½Êï¿½ï¿½displayTextï¿½ï¿½\ï¿½ï¿½
+                click = false;//ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
-            if (Input.GetMouseButton(0))//ƒ}ƒEƒX‚ğƒNƒŠƒbƒN‚µ‚½‚ç
+            if (Input.GetMouseButton(0))//ï¿½}ï¿½Eï¿½Xï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             {
-                click = true; //ƒNƒŠƒbƒN‚³‚ê‚½”»’è‚É‚·‚é
+                click = true; //ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½
             }
         }
     }

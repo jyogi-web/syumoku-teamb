@@ -9,6 +9,6 @@ public class start_script : MonoBehaviour
     public void OnButtonClick()
     {
         // シーンをロード
-        SceneManager.LoadScene("tutriar");
+        SceneManager.LoadScene("tutorial_introduce");
     }
 }
