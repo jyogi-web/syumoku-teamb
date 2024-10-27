@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PhotoChange : MonoBehaviour
 {
     private Image img;
-    private int count = 1;
+    public static int count = 1;
 
     void Start()
     {
