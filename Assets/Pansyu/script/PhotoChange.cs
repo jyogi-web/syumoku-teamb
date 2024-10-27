@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PhotoChange : MonoBehaviour
 {
     private Image img;
-
+    public Text PageCount;
     private int count = 1;
 
 
