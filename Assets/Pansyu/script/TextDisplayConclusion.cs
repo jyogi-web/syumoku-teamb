@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextDisplayConclusion : MonoBehaviour
 {
@@ -14,16 +15,12 @@ public class TextDisplayConclusion : MonoBehaviour
     int displayTextSpeed; //�S�̂̃t���[�����[�g�𗎂Ƃ��ϐ�
     bool click;//�N���b�N����
     bool textStop; //�e�L�X�g�\�����n�߂邩
-    void Start()
-    {
-
-    }
     void Update()
     {
         if (textStop == false) //�e�L�X�g��\��������if��
         {
             displayTextSpeed++;
-            if (displayTextSpeed % 5 == 0)//�T��Ɉ��v���O���������s����if��
+            if (displayTextSpeed % 3 == 0)//�T��Ɉ��v���O���������s����if��
             {
 
                 if (textCharNumber != texts[textNumber].Length)//����text[textNumber]�̕�����̕������Ō�̕�������Ȃ����
@@ -49,6 +46,7 @@ public class TextDisplayConclusion : MonoBehaviour
                             displayText = ""; //�\�������镶���������
                             textCharNumber = 0; //�����̔ԍ����ŏ��ɂ���
                             textStop = true; //�Z���t�\�����~�߂�
+                            SceneManager.LoadScene("TutrioalAnimationGatya 1");
                         }
                     }
                 }

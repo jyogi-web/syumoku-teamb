@@ -23,10 +23,6 @@ public class tutrial_hakaseserifu : MonoBehaviour
     bool isThird = false;
     public int pushNum = 0;
 
-    void Start()
-    {
-
-    }
     void Update()
     {
         if (textStop == false) //テキストを表示させるif文

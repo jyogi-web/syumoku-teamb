@@ -23,11 +23,11 @@ public class made_button2 : MonoBehaviour
     public int row=0;
     public static int[] x = new int[5]
     {
-        240, 320, 400, 480, 560 
+        250, 350, 450, 550, 650 
     };
     public static int[] y = new int[2]
     {
-        300,200
+        350,200
     };
     void Start()
     {

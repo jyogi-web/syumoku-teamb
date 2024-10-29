@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextDisplayIntro : MonoBehaviour
 {
@@ -14,16 +15,13 @@ public class TextDisplayIntro : MonoBehaviour
     int displayTextSpeed; //�ｽS�ｽﾌのフ�ｽ�ｽ�ｽ[�ｽ�ｽ�ｽ�ｽ�ｽ[�ｽg�ｽ獅ﾆゑｿｽ�ｽﾏ撰ｿｽ
     bool click;//�ｽN�ｽ�ｽ�ｽb�ｽN�ｽ�ｽ�ｽ�ｽ
     bool textStop; //�ｽe�ｽL�ｽX�ｽg�ｽ\�ｽ�ｽ�ｽ�ｽ�ｽn�ｽﾟるか
-    void Start()
-    {
-
-    }
+    
     void Update()
     {
         if (textStop == false) //�ｽe�ｽL�ｽX�ｽg�ｽ�ｽ\�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽif�ｽ�ｽ
         {
             displayTextSpeed++;
-            if (displayTextSpeed % 5 == 0)//�ｽT�ｽ�ｽﾉ茨ｿｽ�ｽv�ｽ�ｽ�ｽO�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽs�ｽ�ｽ�ｽ�ｽif�ｽ�ｽ
+            if (displayTextSpeed % 2 == 0)//�ｽT�ｽ�ｽﾉ茨ｿｽ�ｽv�ｽ�ｽ�ｽO�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽs�ｽ�ｽ�ｽ�ｽif�ｽ�ｽ
             {
 
                 if (textCharNumber != texts[textNumber].Length)//�ｽ�ｽ�ｽ�ｽtext[textNumber]�ｽﾌ包ｿｽ�ｽ�ｽ�ｽ�ｽﾌ包ｿｽ�ｽ�ｽ�ｽ�ｽ�ｽﾅ鯉ｿｽﾌ包ｿｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽﾈゑｿｽ�ｽ�ｽ�ｽ
@@ -49,6 +47,7 @@ public class TextDisplayIntro : MonoBehaviour
                             displayText = ""; //�ｽ\�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ髟ｶ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ�ｽ
                             textCharNumber = 0; //�ｽ�ｽ�ｽ�ｽ�ｽﾌ番搾ｿｽ�ｽ�ｽ�ｽﾅ擾ｿｽ�ｽﾉゑｿｽ�ｽ�ｽ
                             textStop = true; //�ｽZ�ｽ�ｽ�ｽt�ｽ\�ｽ�ｽ�ｽ�ｽ�ｽ~�ｽﾟゑｿｽ
+                            SceneManager.LoadScene("buy_cine");
                         }
                     }
                 }
