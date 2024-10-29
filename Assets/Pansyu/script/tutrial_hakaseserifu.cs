@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class tutrial_hakaseserifu : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI selectText;
     
     [SerializeField] TextMeshProUGUI buy;
-    public string[] texts;//Unityã‚Å“ü—Í‚·‚éstring‚Ì”z—ñ
-    int textNumber;//‰½”Ô–Ú‚Ìtexts[]‚ğ•\¦‚³‚¹‚é‚©
-    string displayText;//•\¦‚³‚¹‚éstring
-    int textCharNumber;//‰½•¶š–Ú‚ğdisplayText‚É’Ç‰Á‚·‚é‚©
-    int displayTextSpeed; //‘S‘Ì‚ÌƒtƒŒ[ƒ€ƒŒ[ƒg‚ğ—‚Æ‚·•Ï”
-    bool click;//ƒNƒŠƒbƒN”»’è
-    bool textStop; //ƒeƒLƒXƒg•\¦‚ğn‚ß‚é‚©
-    public static bool isTextEnd = false;//ƒeƒLƒXƒg•\¦‚ªI‚í‚Á‚Ä‚¢‚é‚©
+    public string[] texts;//Unityä¸Šã§å…¥åŠ›ã™ã‚‹stringã®é…åˆ—
+    int textNumber;//ä½•ç•ªç›®ã®texts[]ã‚’è¡¨ç¤ºã•ã›ã‚‹ã‹
+    string displayText;//è¡¨ç¤ºã•ã›ã‚‹string
+    int textCharNumber;//ä½•æ–‡å­—ç›®ã‚’displayTextã«è¿½åŠ ã™ã‚‹ã‹
+    int displayTextSpeed; //å…¨ä½“ã®ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¬ãƒ¼ãƒˆã‚’è½ã¨ã™å¤‰æ•°
+    bool click;//ã‚¯ãƒªãƒƒã‚¯åˆ¤å®š
+    bool textStop; //ãƒ†ã‚­ã‚¹ãƒˆè¡¨ç¤ºã‚’å§‹ã‚ã‚‹ã‹
+    public static bool isTextEnd = false;//ãƒ†ã‚­ã‚¹ãƒˆè¡¨ç¤ºãŒçµ‚ã‚ã£ã¦ã„ã‚‹ã‹
     bool isFirst = false;
     bool isSecond = false;
     bool isThird = false;
@@ -28,58 +29,64 @@ public class tutrial_hakaseserifu : MonoBehaviour
     }
     void Update()
     {
-        if (textStop == false) //ƒeƒLƒXƒg‚ğ•\¦‚³‚¹‚éif•¶
+        if (textStop == false) //ãƒ†ã‚­ã‚¹ãƒˆã‚’è¡¨ç¤ºã•ã›ã‚‹ifæ–‡
         {
             displayTextSpeed++;
-            if (displayTextSpeed % 8 == 0)//‚T‰ñ‚Éˆê‰ñƒvƒƒOƒ‰ƒ€‚ğÀs‚·‚éif•¶
+            if (displayTextSpeed % 2 == 0)//ï¼•å›ã«ä¸€å›ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’å®Ÿè¡Œã™ã‚‹ifæ–‡
             {
 
-                if (textCharNumber != texts[textNumber].Length)//‚à‚µtext[textNumber]‚Ì•¶š—ñ‚Ì•¶š‚ªÅŒã‚Ì•¶š‚¶‚á‚È‚¯‚ê‚Î
+                if (textCharNumber != texts[textNumber].Length)//ã‚‚ã—text[textNumber]ã®æ–‡å­—åˆ—ã®æ–‡å­—ãŒæœ€å¾Œã®æ–‡å­—ã˜ã‚ƒãªã‘ã‚Œã°
                 {
-                    displayText = displayText + texts[textNumber][textCharNumber];//displayText‚É•¶š‚ğ’Ç‰Á‚µ‚Ä‚¢‚­
-                    textCharNumber = textCharNumber + 1;//Ÿ‚Ì•¶š‚É‚·‚é
+                    displayText = displayText + texts[textNumber][textCharNumber];//displayTextã«æ–‡å­—ã‚’è¿½åŠ ã—ã¦ã„ã
+                    textCharNumber = textCharNumber + 1;//æ¬¡ã®æ–‡å­—ã«ã™ã‚‹
                 }
-                else//‚à‚µtext[textNumber]‚Ì•¶š—ñ‚Ì•¶š‚ªÅŒã‚Ì•¶š‚¾‚Á‚½‚ç
+                else//ã‚‚ã—text[textNumber]ã®æ–‡å­—åˆ—ã®æ–‡å­—ãŒæœ€å¾Œã®æ–‡å­—ã ã£ãŸã‚‰
                 {
-                    if (textNumber != texts.Length - 1)//‚à‚µtexts[]‚ªÅŒã‚ÌƒZƒŠƒt‚¶‚á‚È‚¢‚Æ‚«‚Í
+                    if (textNumber != texts.Length - 1)//ã‚‚ã—texts[]ãŒæœ€å¾Œã®ã‚»ãƒªãƒ•ã˜ã‚ƒãªã„ã¨ãã¯
                     {
                         if (textNumber == 1)
                         {
-                            if (pushNum >= 3)//–~K‚ªUŠJ‰Ÿ‚³‚ê‚½‚ç
+                            if (pushNum >= 3)//ã¼ã‚“ã˜ã‚ŠãŒ3å›æŠ¼ã•ã‚ŒãŸã‚‰
                             {
-                                displayText = ""; //•\¦‚³‚¹‚é•¶š—ñ‚àÁ‚·
-                                textCharNumber = 0; //•¶š‚Ì”Ô†‚ğÅ‰‚É‚·‚é
-                                textNumber = textNumber + 1;//Ÿ‚ÌƒZƒŠƒt‚É‚·‚é
+                                displayText = ""; //è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—åˆ—ã‚‚æ¶ˆã™
+                                textCharNumber = 0; //æ–‡å­—ã®ç•ªå·ã‚’æœ€åˆã«ã™ã‚‹
+                                textNumber = textNumber + 1;//æ¬¡ã®ã‚»ãƒªãƒ•ã«ã™ã‚‹
                             }
                         }
-                        else if (click == true)//ƒNƒŠƒbƒN‚³‚ê‚½”»’è
+                        else if (click == true)//ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸåˆ¤å®š
                         {
-                            displayText = "";//•\¦‚³‚¹‚é•¶š—ñ‚ğÁ‚·
-                            textCharNumber = 0;//•¶š‚Ì”Ô†‚ğÅ‰‚É‚·‚é
-                            textNumber = textNumber + 1;//Ÿ‚ÌƒZƒŠƒt‚É‚·‚é
+                            displayText = "";//è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—åˆ—ã‚’æ¶ˆã™
+                            textCharNumber = 0;//æ–‡å­—ã®ç•ªå·ã‚’æœ€åˆã«ã™ã‚‹
+                            textNumber = textNumber + 1;//æ¬¡ã®ã‚»ãƒªãƒ•ã«ã™ã‚‹
                         }
                     }
-                    else //‚à‚µtexts[]‚ªÅŒã‚ÌƒZƒŠƒt‚É‚È‚Á‚½‚ç
+                    else //ã‚‚ã—texts[]ãŒæœ€å¾Œã®ã‚»ãƒªãƒ•ã«ãªã£ãŸã‚‰
                     {
                         
-                        if (click == true) //ƒNƒŠƒbƒN‚³‚ê‚½”»’è
+                        if (click == true) //ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸåˆ¤å®š
                         {
-                            displayText = ""; //•\¦‚³‚¹‚é•¶š—ñ‚àÁ‚·
-                            textCharNumber = 0; //•¶š‚Ì”Ô†‚ğÅ‰‚É‚·‚é
-                            textStop = true; //ƒZƒŠƒt•\¦‚ğ~‚ß‚é
-                            isTextEnd = true;//ƒZƒŠƒt‚ªI‚í‚Á‚½ƒtƒ‰ƒO
+                            displayText = ""; //è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—åˆ—ã‚‚æ¶ˆã™
+                            textCharNumber = 0; //æ–‡å­—ã®ç•ªå·ã‚’æœ€åˆã«ã™ã‚‹
+                            textStop = true; //ã‚»ãƒªãƒ•è¡¨ç¤ºã‚’æ­¢ã‚ã‚‹
+                            isTextEnd = true;//ã‚»ãƒªãƒ•ãŒçµ‚ã‚ã£ãŸãƒ•ãƒ©ã‚°
                         }
                     }
                 }
 
                 buy.text = displayText.ToString();
-                //this.GetComponent<Text>().text = displayText;//‰æ–Êã‚ÉdisplayText‚ğ•\¦
-                click = false;//ƒNƒŠƒbƒN‚³‚ê‚½”»’è‚ğ‰ğœ
+                //this.GetComponent<Text>().text = displayText;//ç”»é¢ä¸Šã«displayTextã‚’è¡¨ç¤º
+                click = false;//ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸåˆ¤å®šã‚’è§£é™¤
             }
-            if (Input.GetMouseButton(0))//ƒ}ƒEƒX‚ğƒNƒŠƒbƒN‚µ‚½‚ç
+            if (Input.GetMouseButton(0))//ãƒã‚¦ã‚¹ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚‰
             {
-                click = true; //ƒNƒŠƒbƒN‚³‚ê‚½”»’è‚É‚·‚é
+                click = true; //ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸåˆ¤å®šã«ã™ã‚‹
             }
         }
+        if(isTextEnd)
+        {
+            SceneManager.LoadScene("fusion");
+        }
     }
+
+
 }

@@ -23,11 +23,11 @@ public class made_button2 : MonoBehaviour
     public int row=0;
     public static int[] x = new int[5]
     {
-        130, 210, 290, 370, 450 
+        240, 320, 400, 480, 560 
     };
     public static int[] y = new int[2]
     {
-        200,100
+        300,200
     };
     void Start()
     {
@@ -46,6 +46,7 @@ public class made_button2 : MonoBehaviour
             // 必要に応じて座標を設定
             
             prefab.transform.position = new Vector3(x[i], y[j], 0);
+            prefab.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             k++;
         }
       }
